@@ -1,27 +1,23 @@
-//finish up this program.thanks.
-
+//Nurul Anissa binti Huzaini
+//A17DW4087
 #include <iostream>
 #include <iomanip>
-
 using namespace std;
 
-void ombakOmbak(int repeat=3,int height=5,int up=2,int down=2)
+void OmbakOmbak(int repeat=3,int height=5,int up=2,int down=2)
 {
 	while(repeat >0)
 	{
-		for(/*up*/)
+		for(int i=1; i<=up; i++)
 		cout<<setw(height)<<right<<"+"<<endl;
-		for(/*down*/)
+		for(int i=1; i<=down; i++)
 		cout<<"+"<<endl;
-		repeat --;
+		repeat--;
 	}
 }
 
-
-
 void OmbakKeluar()
 {
-
 	cout<<"\nwaveDemo\n";
-	petakPelik();
+	OmbakOmbak();
 }
