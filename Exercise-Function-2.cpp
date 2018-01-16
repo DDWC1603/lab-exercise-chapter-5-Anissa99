@@ -3,22 +3,23 @@
 #include <iostream>
 #include <conio.h>
 using namespace std;
-int sum(int x,int y);
+int add(int, int);
 
 int main()
 {
-	int result;
-	char x,y;
+    int ko;
+	int num1, num2, sum;
+	cout<<"Enter two numbers to add: ";
+	cin >> num1 >> num2;
 	
-	x=20;
-	y=10;
-	
-	cout<< "x = 20"<<endl;
-	cout<< "y = 10"<<endl;
-	
-	result = x+y;
-	
-	cout<<"The result is: "<<result<<endl;
-	getch();
+	sum = add(num1, num2);
+	cout<< "Sum = "<<sum;
+	cin>>ko;
+}
 
+int add(int a, int b)
+{
+    int add;
+    add = a + b;
+    return add;
 }
